@@ -1,7 +1,7 @@
 function tracker() {
-  var a=parseInt(getElementById('a').value);
-  var b=parseInt(getElementById('b').value);
-  var c=parseInt(getElementById('c').value);
+  var A=parseInt(document.getElementById('a').value);
+  var B=parseInt(document.getElementById('b').value);
+  var C=parseInt(document.getElementById('c').value);
   var view=document.getElementById('return');
 
 
@@ -16,5 +16,10 @@ function tracker() {
       view.innerHTML="Scalene Triangle"
     }
   }
-  else if
+  else if(isNaN(A) || isNaN(B) || isNaN(C)){
+    view.innerHTML='not a number';
+  }
+  else {
+    view.innerHTML='not a triangle';
+  }
 }
