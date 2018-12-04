@@ -13,7 +13,7 @@ function tracker() {
       view.innerHTML='Isosceles Triangle';
     }
     else{
-      view.innerHTML="Scalene Triangle"
+      view.innerHTML="Scalene Triangle";
     }
   }
   else if(isNaN(A) || isNaN(B) || isNaN(C)){
